@@ -37,9 +37,17 @@ nav li {
 	display: inline-block;
 	position: relative;
 	margin-right: 20px;
-	margin: 5px;	
+	margin: 5px;
+	border-radius: 0;
+}
+
+nav li.current {
+	position: absolute;
+    top: 0;
+    right: 46%;
 }
 nav li.current a {
+	min-width: 136px;
 	background: #c7df63;
     color: #9ab729;
     border-radius: 5px 20px 5px;
@@ -69,7 +77,7 @@ nav li.current a:after {
 	content: '';
     position: absolute;
     display: inline-block;
-    top: -2%;
+    top: -10%;
     left: 14%;
     width: 86%;
     height: 96%;
@@ -77,24 +85,19 @@ nav li.current a:after {
     border-radius: 350px 5px 20px;
 
 }
-nav li:first-child a {
-	border-radius: 15px 0 0px 15px;
 
-}
-nav li:last-child a {
-	border-radius: 0 15px 15px 0;
-}
 nav a {
-	display: block;
-	color: #fff;
-	background: #9ab729;
-	font-family: arial,sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	text-decoration: none;
-	padding: 20px;
-	border-radius: 2px;
-	border: 1px solid #9ab729;
+    display: block;
+    min-width: 62px;
+    color: #fff;
+    background: #9ab729;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 25px;
+    border-radius: 40px 0;
+    border: 1px solid #9ab729;
 }
 nav a:hover {
 	background: #fff;
@@ -102,8 +105,9 @@ nav a:hover {
 }
 
 section {
+	height: 85vh;
     margin: 20px 10px;
-    padding: 20px 80px;
+    padding: 80px 80px 20px;
 	background: #9ab729;
 	color: #fff;
 	border: 2px solid #fff;
@@ -117,10 +121,10 @@ section:nth-child(odd){
 	margin-right: 200px;
 }
 h1 {
-	color: #fff;
-	font-family: arial,sans-serif;
-	font-size: 2em;
-	margin: 0;
-	padding: 10px 0;
-	background: #9ab729;
+    color: #fff;
+    font-family: arial,sans-serif;
+    font-size: 2em;
+    margin: -60px 0 0 0;
+    background: #9ab729;
+    padding: 90px 10px 20px 10px;
 }

@@ -1,0 +1,24 @@
+NYCDA - FE101 - pre-js test assignment - Alex Morse
+
+
+1) Create new variable called name and assign it a string with your name in it.
+
+	var name = "Alex";
+
+
+2) Write a function that takes a number, adds 2 to it, subtracts 5 from it, then returns a value.
+
+	function thenumber(num){
+		num = num + 2;
+		num = num - 5;
+
+		console.log(num);
+	}
+	thenumber(7);//returns 4 to console
+
+
+3) Create a for loop that counts from 1 to 10.
+
+	for( var i = 1; i < 11; i++ ){
+		console.log(i);//prints 1-10 to the console
+	}
