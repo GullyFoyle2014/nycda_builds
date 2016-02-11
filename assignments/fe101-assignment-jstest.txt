@@ -12,9 +12,9 @@ NYCDA - FE101 - pre-js test assignment - Alex Morse
 		num = num + 2;
 		num = num - 5;
 
-		console.log(num);
+		return num;
 	}
-	thenumber(7);//returns 4 to console
+	thenumber(7);//returns 4
 
 
 3) Create a for loop that counts from 1 to 10.
