@@ -59,8 +59,11 @@ nav li.current a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
-
-
+/*     background: url('http://i.livescience.com/images/i/000/009/030/i02/ig15_skyscenes_sundog_02.jpg?1296257149');
+    transition-property: background-position;
+    transition-duration: 3s;
+    transition-delay: 0;
+    background-position: -90px 220px;*/
 }
 nav li.current a:before {
     content: '';
@@ -73,6 +76,9 @@ nav li.current a:before {
     border: 1px solid #f00;
     border-radius: 108px/30px;
 }
+/*nav li.current a:hover {
+    background-position: -330px 220px;
+}*/
 nav li.current a:after {
 	content: '';
     position: absolute;
@@ -96,12 +102,19 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     padding: 20px 25px;
-    border-radius: 40px 0;
     border: 1px solid #9ab729;
+    transition-property: border-radius;
+    transition-duration: 0.5s;
+  	transition-delay: 0;
+  	border-radius: 40px 0;
 }
 nav a:hover {
 	background: #fff;
 	color: #9ab729;
+	transition-property: border-radius;
+  	transition-duration: 0.3s;
+  	transition-delay: 0;
+  	border-radius: 0 40px;
 }
 
 section {
