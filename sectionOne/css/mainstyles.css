@@ -11,6 +11,8 @@ body {
 	font-size: 1em;
 }
 nav {
+    display: hidden;
+    min-height: 90px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -40,11 +42,43 @@ nav li {
 	margin: 5px;
 	border-radius: 0;
 }
+nav ul ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul ul li {
+    width: 100px;
+    display: block;
+    margin-bottom: -5px;
+}
+nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    top: 50px;
+    z-index: 7;
+    padding-top: 20px;
+    
+}
+nav ul li:hover ul li a {
+    background: #fff;
+    color: #9ab729;
+    border: 1px dashed #9AB729;
+    font-size: 13px;
+    border-radius: 0;
+    padding: 10px 0;
 
+}
+nav ul li:hover ul li a:hover {
+    background: #9ab729;
+    color: #fff;
+    border: 1px dashed #fff;
+}
 nav li.current {
-	position: absolute;
+	/*position: absolute;
     top: 0;
     right: 46%;
+    */
 }
 nav li.current a {
 	min-width: 136px;
@@ -117,8 +151,10 @@ nav a:hover {
   	border-radius: 0 40px;
 }
 
+
+
 section {
-	height: 85vh;
+	min-height: 85vh;
     margin: 20px 10px;
     padding: 80px 80px 20px;
 	background: #9ab729;
@@ -141,3 +177,39 @@ h1 {
     background: #9ab729;
     padding: 90px 10px 20px 10px;
 }
+
+
+#hamburger {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    float: right;
+    margin-right: 20px;
+    z-index: 5;
+
+}
+
+
+@media( max-width: 768px){
+    nav ul { display: none; }
+    nav ul ul { display: none; }
+    nav li {
+        display: block;
+    }
+    nav ul li:hover ul {
+        top: -25px;
+        z-index: 7;
+        padding-top: 20px;
+        right: -109px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+}
+
+
+
