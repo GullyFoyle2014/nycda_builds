@@ -13,6 +13,16 @@ $(document).ready(function() {
 	function toggleNav(){
 		$('nav .topnav').slideToggle();
 	}
+
+	// function toggleChildren(){
+	// 	$('nav ul ul').slideToggle();
+	// }
+
+	// $('nav ul li:last-child').on('click', function(){
+	// 	toggleChildren();
+	// });
+
+
 	//window resize function
 	function windowResized(){
 		var width = $(window).width();

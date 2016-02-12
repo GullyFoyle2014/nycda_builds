@@ -32,9 +32,18 @@ nav ul {
     margin: 0;
     padding: 0;
     float: left;
+    transition-property: margin-left;
+    transition-duration: 0.5s;
+    transition-delay: 0;
     margin-left: 105px;
 
 }
+@media( max-width: 840px ){
+    nav ul.topnav {
+        margin-left: 28px;
+    }
+}
+
 nav li {
 	display: inline-block;
 	position: relative;
@@ -63,16 +72,15 @@ nav ul li:hover ul {
 nav ul li:hover ul li a {
     background: #fff;
     color: #9ab729;
-    border: 1px dashed #9AB729;
+    border: 2px dashed #9AB729;
     font-size: 13px;
     border-radius: 0;
-    padding: 10px 0;
-
+    padding: 18px 0;
 }
 nav ul li:hover ul li a:hover {
     background: #9ab729;
     color: #fff;
-    border: 1px dashed #fff;
+    border: 2px dashed #fff;
 }
 nav li.current {
 	/*position: absolute;
@@ -156,11 +164,19 @@ nav a:hover {
 section {
 	min-height: 85vh;
     margin: 20px 10px;
-    padding: 80px 80px 20px;
-	background: #9ab729;
+    padding: 33px 50px 33px 50px;
 	color: #fff;
 	border: 2px solid #fff;
     border-radius: 120px;
+    background: #9ab729 url('/sectionOne/images/footer_bar.jpg');
+    background-size: cover;
+    transition-property: background-position;
+    transition-duration: 4.0s;
+    transition-delay: 0;
+    background-position: 1190px 1504px;
+}
+section:hover {
+    background-position: -10px 960px;
 }
 section:nth-child(even){
 	border: 2px dashed #fff;
@@ -210,6 +226,17 @@ h1 {
     }
 
 }
-
+@media(max-width: 840px){
+    section {     
+        width: calc(100% - 124px);
+        padding: 50px;
+        margin: 20px 10px;
+    }
+    section:nth-child(even),
+    section:nth-child(odd) {
+        margin: 20px auto;
+    }
+    
+}
 
 
