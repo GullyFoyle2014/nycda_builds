@@ -206,12 +206,12 @@ h1 {
     font-weight: bold;
     border: none;
     background: transparent;
-    float: right;
-    margin-right: 5%;
-    margin-top: 1%;
+    float: left;
+    margin-top: .25%;
     z-index: 5;
     box-shadow: 5px 5px 17px 0px;
-
+    color: #222;
+    margin-left: 6%;
 }
 
 
