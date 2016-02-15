@@ -13,6 +13,7 @@ body {
 nav {
     display: hidden;
     min-height: 60px;
+    z-index: 100;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -44,16 +45,17 @@ nav ul {
 }
 @media( max-width: 840px ){
     nav ul.topnav {
-        margin-left: 28px;
+        margin-left: 39px;
+        margin-top: 20px;
     }
 }
 
 nav li {
-	display: inline-block;
-	position: relative;
-	margin-right: 20px;
-	margin: 5px;
-	border-radius: 0;
+    display: inline-block;
+    position: relative;
+    margin-right: -113px;
+    margin: -19px;
+    border-radius: 0;
 }
 nav ul ul {
     display: none;
@@ -68,10 +70,10 @@ nav ul ul li {
 nav ul li:hover ul {
     display: block;
     position: absolute;
-    top: 50px;
+    top: 55px;
     z-index: 7;
     padding-top: 20px;
-    
+    right: 17px;
 }
 nav ul li:hover ul li a {
     background: #fff;
@@ -156,31 +158,35 @@ nav a {
 }
 nav a:hover,
 nav a:focus {
-	background: #fff;
-	color: #9ab729;
-	transition-property: border-radius;
-  	transition-duration: 0.3s;
-  	transition-delay: 0;
-  	border-radius: 0 40px;
+    background: #fff;
+    color: #9ab729;
+    transition-property: border-radius;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    border-radius: 0 40px;
+    box-shadow: 3px 4px 13px -1px #333;
+    z-index: 10;
 }
-
-
+nav li:hover {
+    z-index: 10;
+}
 
 section {
 	min-height: 85vh;
     margin: 20px 10px;
-    padding: 33px 50px 33px 50px;
+    padding: 0;
 	color: #fff;
 	border: 2px solid #fff;
     border-radius: 120px;
-    background: #9ab729 url('/sectionOne/images/footer_bar.jpg');
+    background: #9ab729 url('/images/footer_bar.jpg');
     background-size: cover;
     transition-property: background-position;
     transition-duration: 4.0s;
     transition-delay: 0;
     background-position: 1190px 1504px;
 }
-section:hover {
+section:hover,
+section:focus {
     background-position: -10px 960px;
 }
 section:nth-child(even){
@@ -190,13 +196,30 @@ section:nth-child(even){
 section:nth-child(odd){
 	margin-right: 200px;
 }
+section .contPdg {
+    min-height: 65vh;
+    width: calc(95% - 90px);
+    background: #fff;
+    color: #222;
+    opacity: 0.80;
+    border-radius: 120px;
+    padding: 45px;
+    margin: 10px auto 5px;
+}
 h1 {
     color: #fff;
     font-family: arial,sans-serif;
-    font-size: 2em;
-    margin: -60px 0 0 0;
+    font-size: 1.9em;
+    margin: -79px 0 0 0;
     background: #9ab729;
-    padding: 90px 10px 20px 10px;
+    padding: 120px 10px 20px 10px;
+    text-align: center;
+
+/*    background: url('/images/floral_band.png') repeat;
+    background-size: cover;
+    background-position: 510px 1040px;*/
+    /*background: repeating-linear-gradient( 50deg, #D0E4B0, #dbf16b 1em, #D0E4B0 1em, #FFDEA8 2em, #D0E4B0 2em, #D0E4B0 3em, #cbe230 3em, #D0E4B0 4em, #cbe230 4em, #cbe230 5em, #838b73 5em, #9ab729 6em ), repeating-linear-gradient( -50deg, #9ab729, #838b73 1em, #FFDEA8 1em, #D0E4B0 2em, #D0E4B0 2em, #D0E4B0 3em, #dbf16b 3em, #b2c873 4em, #c7d8ac 4em, #dbf16b 5em, #d9ef42 5em, #b2c873 6em );
+    background-blend-mode: multiply;*/
 }
 
 
@@ -222,10 +245,10 @@ h1 {
         display: block;
     }
     nav ul li:hover ul {
-        top: -25px;
+        top: -55px;
         z-index: 7;
         padding-top: 20px;
-        right: -109px;
+        right: -69px;
     }
 
     #hamburger {
@@ -235,15 +258,19 @@ h1 {
 }
 @media(max-width: 840px){
     section {     
-        width: calc(100% - 124px);
-        padding: 50px;
+        width: calc(100% - 5%);
+        padding: 0;
         margin: 20px 10px;
     }
     section:nth-child(even),
     section:nth-child(odd) {
-        margin: 20px auto;
+        margin: 20px 10px;
     }
-    
+    section .contPdg {
+        width: 72%;
+        padding: 13%;
+        margin: 5px auto;
+    }
 }
 
 
