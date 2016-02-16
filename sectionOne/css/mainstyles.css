@@ -46,7 +46,7 @@ nav ul {
 @media( max-width: 840px ){
     nav ul.topnav {
         margin-left: 39px;
-        margin-top: 20px;
+        margin-top: 0;
     }
 }
 
@@ -239,8 +239,14 @@ h1 {
 
 
 @media( max-width: 768px){
-    .topnav {
+    nav ul.topnav {
         box-shadow: 2px 22px 32px -6px;
+        margin-left: 39px;
+        margin-top: 0;
+        z-index: 1000;
+        position: absolute;
+        left: 20%;
+        background: #fff;
     }
     nav {
         padding: 20px 25px;
