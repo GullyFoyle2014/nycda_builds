@@ -197,7 +197,7 @@ section:nth-child(odd){
 	margin-right: 200px;
 }
 section .contPdg {
-    min-height: 65vh;
+    min-height: 71vh;
     width: calc(95% - 90px);
     background: #fff;
     color: #222;
