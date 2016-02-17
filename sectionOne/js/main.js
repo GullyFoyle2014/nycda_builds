@@ -7,7 +7,8 @@ $(document).ready(function() {
 		   currentClass: 'current',
 		   changeHash: false,
 		   scrollSpeed: 750,
-		   scrollThreshold: 0.2
+		   scrollThreshold: 0.4,
+		   navItems: 'a:not(.submenu a)'
 		});
 	}
 	function toggleNav(){
@@ -47,5 +48,6 @@ $(document).ready(function() {
 
 	//fire of on doc.ready
 	sectionFlag();
+
 
 });

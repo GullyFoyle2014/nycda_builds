@@ -21,7 +21,7 @@ nav {
 	background: #f6f6f6;
 	width: 100%;
 	text-align: center;
-	padding: 36px 0 10px;
+	padding: 36px 0 12px;
 	border-bottom: 1px solid #9ab729;
 	-webkit-box-shadow: 0px 19px 30px -21px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 19px 30px -21px rgba(0,0,0,0.75);
@@ -35,14 +35,12 @@ nav {
 }
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
     float: left;
     transition-property: margin-left;
     transition-duration: 0.5s;
     transition-delay: 0;
-    margin-left: 105px;
-
+    margin: -6px 0 0 105px;
 }
 @media( max-width: 840px ){
     nav ul.topnav {
@@ -66,12 +64,12 @@ nav ul ul {
 nav ul ul li {
     width: 100px;
     display: block;
-    margin-bottom: -5px;
+    margin-bottom: 19px;
 }
 nav ul li:hover ul {
     display: block;
     position: absolute;
-    top: 55px;
+    top: 61px;
     z-index: 7;
     padding-top: 20px;
     right: 17px;
@@ -97,17 +95,19 @@ nav li.current {
 }
 nav li.current a {
 	min-width: 136px;
+    margin: 0 5px;
 	background: #c7df63;
     color: #9ab729;
     border-radius: 5px 20px 5px;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 800;
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-decoration: none;
     background-image: -webkit-linear-gradient(#9FE, #A20);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
+    background-blend-mode: multiply;
 /*     background: url('http://i.livescience.com/images/i/000/009/030/i02/ig15_skyscenes_sundog_02.jpg?1296257149');
     transition-property: background-position;
     transition-duration: 3s;
@@ -150,7 +150,7 @@ nav a {
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-    padding: 20px 28px;
+    padding: 20px 43px;
     border: 1px solid #9ab729;
     transition-property: border-radius;
     transition-duration: 0.5s;
@@ -198,13 +198,13 @@ section:nth-child(odd){
 	margin-right: 200px;
 }
 section .contPdg {
-    min-height: 71vh;
-    width: calc(95% - 90px);
+    min-height: 91vh;
+    width:  95%;
     background: #fff;
     color: #222;
     opacity: 0.80;
     border-radius: 120px;
-    padding: 45px;
+    padding: 65px 45px 45px;
     margin: 10px auto 5px;
 }
 h1 {
@@ -243,7 +243,7 @@ h1 {
 @media( max-width: 768px){
     nav ul.topnav {
         box-shadow: 2px 22px 32px -6px;
-        margin-left: 39px;
+        margin-left: 49px;
         margin-top: 0;
         z-index: 1000;
         position: absolute;
@@ -285,10 +285,31 @@ h1 {
         margin: 20px 10px;
     }
     section .contPdg {
-        width: 72%;
-        padding: 13%;
+        width: 90%;
+        padding: 22% 13% 13%;
         margin: 5px auto;
     }
 }
 
 
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}
