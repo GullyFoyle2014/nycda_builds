@@ -32,8 +32,8 @@ $(document).ready(function() {
 
 	//fire of on doc.ready
 	$.stellar({
-		horizontalOffset: -500,
-  		verticalOffset: 628
+		horizontalOffset: -400,
+  		verticalOffset: 587
 	});//paralaxy
 	sectionFlag();//jquery-nav
 	$(window).resize(windowResized);
