@@ -107,7 +107,7 @@ nav li.current a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
-    background-blend-mode: multiply;
+    background-blend-mode: f;
 /*     background: url('http://i.livescience.com/images/i/000/009/030/i02/ig15_skyscenes_sundog_02.jpg?1296257149');
     transition-property: background-position;
     transition-duration: 3s;
@@ -181,6 +181,7 @@ section {
     border-radius: 120px;
     background: #9ab729 url('/images/footer_bar.jpg');
     background-size: cover;
+    background-attachment: fixed;
     transition-property: background-position;
     transition-duration: 4.0s;
     transition-delay: 0;

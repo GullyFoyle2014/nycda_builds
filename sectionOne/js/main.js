@@ -1,7 +1,6 @@
 //main styles
 $(document).ready(function() {
 
-
 	function sectionFlag(){
 		$('#nav').onePageNav({
 		   currentClass: 'current',
@@ -11,18 +10,10 @@ $(document).ready(function() {
 		   navItems: 'a:not(.submenu a)'
 		});
 	}
+
 	function toggleNav(){
 		$('nav .topnav').slideToggle();
 	}
-
-	// function toggleChildren(){
-	// 	$('nav ul ul').slideToggle();
-	// }
-
-	// $('nav ul li:last-child').on('click', function(){
-	// 	toggleChildren();
-	// });
-
 
 	//window resize function
 	function windowResized(){
@@ -32,22 +23,19 @@ $(document).ready(function() {
 			menu.removeAttr('style');
 		}
 	}
-	$(window).resize(windowResized);
-
+	
 	//toggles nav on click
 	$('#hamburger').on('click', function(){
 	 	toggleNav();
 	});
 
-	// $(window).resize(function(){
-	// 	var w = $(window).width();
-	// 	if(w > 420 && menu.is('.hidden')){
-	// 		menu.removeAttr('style');
-	// 	}
-	// });
 
 	//fire of on doc.ready
-	sectionFlag();
-
+	$.stellar({
+		horizontalOffset: -500,
+  		verticalOffset: 628
+	});//paralaxy
+	sectionFlag();//jquery-nav
+	$(window).resize(windowResized);
 
 });
