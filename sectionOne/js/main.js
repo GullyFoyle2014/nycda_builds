@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 	//fire of on doc.ready
 	$.stellar({
-		horizontalOffset: -400,
+		horizontalOffset: -600,
   		verticalOffset: 587
 	});//paralaxy
 	sectionFlag();//jquery-nav
