@@ -29,6 +29,12 @@ $(document).ready(function() {
 	 	toggleNav();
 	});
 
+	// $(document).click(function(e) {
+	//     var target = e.target;
+	//     if (!$(target).is('#menu') && !$(target).parents().is('#menu')) {
+	//         $('#menu').hide();
+	//     }
+	// });
 
 	//fire of on doc.ready
 	$.stellar({
